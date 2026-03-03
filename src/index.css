@@ -383,12 +383,14 @@ h3 {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .doc-links {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 0.8rem;
 }
 

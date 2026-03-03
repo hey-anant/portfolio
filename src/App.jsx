@@ -13,9 +13,9 @@ const projectData = [
     category: 'Web App',
     description:
       'Engineered a broker-free land marketplace prototype with role-based buyer/seller workflows, mock verification, and localStorage-backed data persistence.',
-    stack: ['React', 'Vite', 'Tailwind CSS', 'Lucide React', 'localStorage'],
-    demoUrl: '',
-    codeUrl: 'https://github.com/hey-anant?tab=repositories',
+    stack: ['React.js', 'Vite', 'Tailwind CSS', 'Lucide React', 'localStorage'],
+    demoUrl: 'https://terravilla.vercel.app/',
+    codeUrl: 'https://github.com/hey-anant/TerraVilla',
   },
   {
     id: 2,
@@ -25,17 +25,17 @@ const projectData = [
       'Developed a browser-based reading platform with interactive reading views and fast client-side book search.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     demoUrl: 'https://hey-anant.github.io/bookOrbit/',
-    codeUrl: 'https://github.com/hey-anant?tab=repositories',
+    codeUrl: 'https://github.com/hey-anant/bookOrbit',
   },
   {
     id: 3,
     title: 'Weather App',
     category: 'Web App',
     description:
-      'Built a responsive React weather application with city-based forecasting, API integration, and robust error-state handling.',
-    stack: ['React', 'JavaScript', 'OpenWeatherMap API'],
+      'Built a responsive React.js weather application with city-based forecasting, API integration, and robust error-state handling.',
+    stack: ['React.js', 'JavaScript', 'OpenWeatherMap API'],
     demoUrl: 'https://hey-anant.github.io/Weather-App/',
-    codeUrl: 'https://github.com/hey-anant?tab=repositories',
+    codeUrl: 'https://github.com/hey-anant/Weather-App',
   },
   {
     id: 4,
@@ -45,15 +45,14 @@ const projectData = [
       'Implemented an interactive sequence-memory game with randomized pattern generation and input validation logic.',
     stack: ['JavaScript', 'CSS'],
     demoUrl: 'https://hey-anant.github.io/Simon-Game/',
-    codeUrl: 'https://github.com/hey-anant?tab=repositories',
+    codeUrl: 'https://github.com/hey-anant/Simon-Game',
   },
 ]
 
 const skillTags = [
-  'C',
   'Java',
   'JavaScript',
-  'React',
+  'React.js',
   'Node.js',
   'Express.js',
   'REST API',
@@ -71,13 +70,9 @@ const softSkillTags = [
 ]
 
 const socialLinks = [
+  { label: 'Email', href: 'mailto:anantkumar.r77@gmail.com' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/hey-anant' },
   { label: 'GitHub', href: 'https://github.com/hey-anant' },
-  { label: 'Email', href: 'mailto:anantkumar.r77@gmail.com' },
-  {
-    label: 'Certificates',
-    href: 'https://drive.google.com/drive/folders/1hwB2zhsVETPjR9tnahdruRpT6JgUZ9LA?usp=sharing',
-  },
   { label: 'LeetCode', href: 'https://leetcode.com/u/hey_anant_/' },
   { label: 'GeeksForGeeks', href: 'https://www.geeksforgeeks.org/profile/hey_anant_/' },
 ]
@@ -150,7 +145,7 @@ export default function App() {
             <p className="kicker animated-role">Full Stack Developer</p>
             <h1>Building reliable, user-focused web products.</h1>
             <p>
-              I develop responsive applications using React and Node.js, with clean UI,
+              I develop responsive applications using React.js and Node.js, with clean UI,
               maintainable architecture, animated UI interactions, and practical problem-solving
               for real-world use cases.
             </p>
@@ -161,9 +156,9 @@ export default function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                View Reference Letter
+                Reference Letter
               </a>
-              <a href="#projects">View Projects</a>
+              <a href="#projects">Projects</a>
               <a href="#contact">Contact Me</a>
             </div>
 
@@ -190,7 +185,7 @@ export default function App() {
             <h2>Professional Experience</h2>
             <h3>Full Stack Developer | Academic & Personal Projects</h3>
             <ul>
-              <li>Built responsive full-stack applications using React, Node.js, and RESTful architecture.</li>
+              <li>Built responsive full-stack applications using React.js, Node.js, and RESTful architecture.</li>
               <li>Developed and integrated secure APIs with authentication, authorization, and end-to-end CRUD operations.</li>
               <li>Applied data-structure and algorithm techniques to optimize backend logic and response efficiency.</li>
             </ul>
@@ -299,8 +294,16 @@ export default function App() {
             ))}
           </div>
           <div className="doc-links">
+            <a
+              className="resume-link"
+              href="https://drive.google.com/drive/folders/1hwB2zhsVETPjR9tnahdruRpT6JgUZ9LA?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Certificates
+            </a>
             <a className="resume-link" href="/resume-preview.png" target="_blank" rel="noreferrer">
-              View Resume Snapshot
+              Resume
             </a>
             <a
               className="resume-link"
@@ -308,7 +311,7 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              View Reference Letter
+              Reference Letter
             </a>
           </div>
         </section>
@@ -332,7 +335,7 @@ export default function App() {
             />
             <textarea
               name="message"
-              placeholder="Tell me about your project"
+              placeholder="Write your message"
               rows="4"
               value={contactData.message}
               onChange={handleInputChange}
