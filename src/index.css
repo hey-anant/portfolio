@@ -352,7 +352,6 @@ main.container > section:nth-of-type(7) {
   padding: 0.5rem;
   object-fit: cover;
   box-shadow: 0 16px 30px rgba(8, 14, 34, 0.3);
-  animation: floatProfile 5s ease-in-out infinite;
 }
 
 .theme-dark .profile-image {
@@ -676,6 +675,48 @@ h3 {
 
 .theme-light .project-links a:hover {
   box-shadow: 0 8px 18px rgba(31, 55, 117, 0.18);
+}
+
+.resume-cta-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-bottom: 0.25rem;
+}
+
+.resume-cta-btn {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 0.75rem 2rem;
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.03em;
+}
+
+.theme-dark .resume-cta-btn {
+  background: linear-gradient(135deg, rgba(130, 162, 255, 0.28), rgba(160, 120, 255, 0.28));
+  color: #eaf0ff;
+  border: 1px solid rgba(184, 205, 255, 0.3);
+}
+
+.theme-light .resume-cta-btn {
+  background: linear-gradient(135deg, rgba(17, 35, 79, 0.12), rgba(100, 60, 170, 0.12));
+  color: #1f3370;
+  border: 1px solid rgba(19, 34, 72, 0.22);
+}
+
+.resume-cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.theme-dark .resume-cta-btn:hover {
+  box-shadow: 0 10px 24px rgba(118, 153, 255, 0.38);
+}
+
+.theme-light .resume-cta-btn:hover {
+  box-shadow: 0 10px 24px rgba(31, 55, 117, 0.28);
 }
 
 .about p {
